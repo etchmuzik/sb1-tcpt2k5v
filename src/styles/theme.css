@@ -1,0 +1,32 @@
+@layer base {
+  :root {
+    /* Primary Colors */
+    --color-primary: #0A0A0A;      /* Deep black for main backgrounds */
+    --color-primary-hover: #1A1A1A;
+    
+    /* Secondary Colors - Teal */
+    --color-secondary: #47bda4;    /* Main teal */
+    --color-secondary-hover: #3da892;
+    --color-secondary-light: rgba(71, 189, 164, 0.1);
+    
+    /* Background Colors */
+    --color-bg-dark: #000000;      /* Pure black */
+    --color-bg-light: #111111;     /* Slightly lighter black */
+    
+    /* Text Colors */
+    --color-text-primary: #FFFFFF; /* White text */
+    --color-text-secondary: #CCCCCC; /* Light gray text */
+    --color-text-muted: #888888;   /* Muted text */
+  }
+}
+
+@layer utilities {
+  .text-teal { color: var(--color-secondary); }
+  .bg-teal { background-color: var(--color-secondary); }
+  .bg-teal-light { background-color: var(--color-secondary-light); }
+  .border-teal { border-color: var(--color-secondary); }
+  
+  .hover-teal:hover { color: var(--color-secondary); }
+  .hover-bg-teal:hover { background-color: var(--color-secondary); }
+  .hover-border-teal:hover { border-color: var(--color-secondary); }
+}

@@ -1,0 +1,26 @@
+@layer components {
+  /* Interactive Elements Base Transitions */
+  .interactive-base {
+    @apply transition-all duration-200;
+  }
+
+  /* Button Base Styles */
+  .btn {
+    @apply px-6 py-3 rounded-lg font-medium interactive-base;
+  }
+
+  /* Menu Item Base Styles */
+  .menu-item {
+    @apply px-4 py-3 flex items-center interactive-base;
+  }
+
+  /* Icon Spacing */
+  .icon-spacing {
+    @apply mr-2; /* 8px */
+  }
+
+  /* Active Indicator */
+  .active-indicator {
+    @apply border-l-[3px] border-[#47bda4];
+  }
+}

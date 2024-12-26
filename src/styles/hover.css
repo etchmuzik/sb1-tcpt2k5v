@@ -1,0 +1,26 @@
+@layer utilities {
+  /* Base transition for all interactive elements */
+  .transition-base {
+    @apply transition-all duration-300 ease-in-out;
+  }
+
+  /* Interactive elements hover effect */
+  .hover-interactive {
+    @apply transition-base text-white hover:text-[#2ECC71];
+  }
+
+  /* Button hover effects */
+  .hover-button {
+    @apply transition-base hover:bg-[#2ECC71] hover:border-[#2ECC71] hover:text-black;
+  }
+
+  /* Navigation link hover effects */
+  .hover-nav {
+    @apply transition-base text-white hover:text-[#2ECC71];
+  }
+
+  /* Dropdown hover effects */
+  .hover-dropdown {
+    @apply transition-base text-white hover:text-[#2ECC71] hover:bg-zinc-800/50;
+  }
+}
